@@ -10,4 +10,5 @@ body {
   font-family: variables.$Font-family-body;
   font-size: variables.$Font-size-body;
   background-color: variables.$Gradient-2;
+  overflow-x: hidden;
 }

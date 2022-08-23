@@ -91,7 +91,7 @@ body {
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
   position: absolute;
   padding: 16px 30px;
-  right: 2px;
+  right: 1px;
   top: 0;
   height: 100%;
   border-radius: 50px;
@@ -170,6 +170,12 @@ body {
   }
   .section-presentation__form input[type=image] {
     right: 265px;
+  }
+  .section-presentation__form div span {
+    padding-left: 164px;
+  }
+  .section-presentation__form div div {
+    right: 350px;
   }
 }
 

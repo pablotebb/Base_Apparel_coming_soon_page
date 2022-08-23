@@ -85,7 +85,7 @@
       // background-size: cover;
       position: absolute;
       padding: 16px 30px;
-      right: 2px;
+      right: 1px;
       top: 0;
       height: 100%;
       border-radius: 50px;
@@ -181,6 +181,14 @@
       }
       input[type="image"] {
         right: 265px;
+      }
+      div {
+        span {
+          padding-left: 164px;
+        }
+        div {
+          right: 350px;
+        }
       }
     }
   }

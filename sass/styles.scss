@@ -1,0 +1,123 @@
+@use "variables";
+@use "initial";
+@use "footer";
+
+.main-container {
+  // border: 1px solid red;
+  width: variables.$Width-card;
+  height: variables.$Height-card;
+  margin: 0 auto 80px;
+}
+
+.section-logo {
+  &__img {
+    // border: 1px solid red;
+    background-image: url(../images/logo.svg);
+    width: 400px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px 0 25px 25px;
+  }
+}
+
+.section-picture {
+  &__img {
+    background-image: url(../images/hero-mobile.jpg);
+    width: 100%;
+    height: 253px;
+    background-size: cover;
+    margin-bottom: 55px;
+  }
+}
+
+.section-presentation {
+  &__title {
+    font-size: 2.6em;
+    width: 230px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 9px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  &__title--color {
+    color: variables.$Desaturated-Red;
+    font-weight: 300;
+  }
+  &__description {
+    // border: 1px solid blue;
+    font-size: 1em;
+    color: variables.$Desaturated-Red;
+    width: 100%;
+    margin: 0 auto 35px;
+    text-align: center;
+    line-height: 23px;
+  }
+  &__form {
+    // border: 1px solid blue;
+    width: 95%;
+    height: 48px;
+    margin: auto;
+    position: relative;
+    input[type="text"] {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      padding-left: 20px;
+      border: none;
+      border: 1px solid variables.$Gradient-3;
+    }
+    input[type="text"]::placeholder {
+      font-size: 1em;
+      letter-spacing: 1px;
+      color: variables.$Desaturated-Red;
+    }
+    input[type="image"] {
+      // background-color: red;
+      background: linear-gradient(
+        135deg,
+        variables.$Gradient-3,
+        variables.$Gradient-4
+      );
+      // background-size: cover;
+      position: absolute;
+      padding: 16px 30px;
+      right: 2px;
+      top: 0;
+      height: 100%;
+      border-radius: 50px;
+      width: 70px;
+    }
+    input[type="image"]:hover {
+      background: linear-gradient(
+        135deg,
+        variables.$Gradient-2,
+        variables.$Gradient-4
+      );
+      box-shadow: 0 9px 14px variables.$Gradient-3;
+    }
+    div {
+      span {
+        // border: 1px solid red;
+        font-size: 0.7em;
+        padding-left: 19px;
+        margin-top: 11px;
+        display: block;
+        color: variables.$Soft-Red;
+      }
+      div {
+        // Imagen input error
+        background-image: url(../images/icon-error.svg);
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 80px;
+        top: 14px;
+        visibility: hidden;
+      }
+    }
+  }
+}
